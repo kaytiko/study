@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__position">
+        <a href="">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
+            <img class="header__logo" src="img/logo-mobile.svg" alt="логотип">
+          </picture>
+        </a>
+        <button class="header__open">
+          Открыть меню
+        </button>
+        <div class="header__menu">
+          <a href="index.html" class="header__button header__button--in-form">
+            Главная
+          </a>
+          <a href="catalog.html" class="header__button header__button--catalog header__button--in-form">
+            Каталог продукции
+          </a>
+          <a href="form.html" class="header__button header__button--form header__button--opened header__button--in-form">
+            Подбор программы
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <a href="index.html" class="mobile-menu__button">
+        Главная
+      </a>
+      <a href="catalog.html" class="mobile-menu__button">
+        Каталог продукции
+      </a>
+      <a href="form.html" class="mobile-menu__button">
+        Подбор программы
+      </a>
+    </div>
+    <main class="form">
+      <h1 class="form__title">
+        Подбор программы
+      </h1>
+      <p class="form_programm">
+        Заполните анкету, и мы подберем<br>программу питания для вашего кота
+      </p>
+      <form class="form__data" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="form__cat">
+          <label class="form__cat-label" for="name">
+            Имя:*
+            <input class="form__cat-input" type="text" id="name" name="name"><br>
+          </label>
+          <label class="form__cat-label" for="weight">
+            Вес (кг):*
+            <input class="form__cat-input" type="text" id="weight" name="weight"><br>
+          </label>
+          <label class="form__cat-label" for="age">
+            Возраст (лет):
+            <input class="form__cat-input" type="text" id="age" name="age"><br>
+          </label>
+        </fieldset>
+        <fieldset class="form__programm-type">
+          <label class="form__programm-type-label" for="slim">
+            <input class="form__programm-type-input" type="radio" id="slim" name="programm" value="slim">
+            Похудение<br>
+          </label>
+          <label class="form__programm-type-label" for="pro">
+            <input class="form__programm-type-input" type="radio" id="pro" name="programm" value="pro">
+            Набор массы<br>
+          </label>
+          <label class="form__programm-type-label" for="none">
+            <input class="form__programm-type-input" type="radio" id="none" name="programm" value="none">
+            Не знаю (Нужен ваш совет)<br>
+          </label>
+        </fieldset>
+        <fieldset class="form__contact-details">
+          <legend class="form__contact-details-title">
+            Контактные данные (владельца кота)
+          </legend>
+          <label class="form__contact-details-label" for="email">
+            E-mail:*
+            <input class="form__contact-details-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM"><br>
+          </label>
+          <label class="form__contact-details-label" for="tel">
+            Телефон:*
+            <input class="form__contact-details-input" type="tel" id="tel" name="phone" placeholder="8 (960) 900-60-90"><br>
+          </label>
+        </fieldset>
+        <fieldset class="form__comment">
+          <legend class="form__comment-title">
+            Комментарий
+          </legend>
+          <textarea class="form__comment-input">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+        <fieldset class="form__additionally">
+          <legend class="form__additionally-title">
+            Дополнительно
+          </legend>
+          <label class="form__additionally-label" for="sweetener">
+            <input class="form__additionally-input" type="checkbox" id="sweetener" name="sweetener">
+            Сахарозаменитель<br>
+          </label>
+          <label class="form__additionally-label" for="water">
+            <input class="form__additionally-input" type="checkbox" id="water" name="water">
+            Питьевая вода<br>
+          </label>
+          <label class="form__additionally-label" for="milk">
+            <input class="form__additionally-input" type="checkbox" id="milk" name="milk">
+            Молоко<br>
+          </label>
+          <label class="form__additionally-label" for="vitamins">
+            <input class="form__additionally-input" type="checkbox" id="vitamins" name="vitamins">
+            Витамины<br>
+          </label>
+        </fieldset>
+        <div>
+          <input class="form__submit" type="submit" value="Отправить заявку">
+          <p class="form__mandatory">
+            * — Обязательные поля
+          </p>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__contacts">
+        <p class="footer__invite">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="footer__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="362" id="gmap_canvas" src="https://maps.google.com/maps?q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.net">123movies. net</a></div><style>.mapouter{position:relative;text-align:right;height:362px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:362px;width:100%;}</style></div>
+      <div class="footer__position">
+        <div class="footer__social">
+          <a href="" class="footer__social-network footer__social-network--vk">
+            Вконтакте
+          </a>
+          <a href="" class="footer__social-network footer__social-network--in">
+            Инстаграм
+          </a>
+          <a href="" class="footer__social-network footer__social-network--fb">
+            Фейсбук
+          </a>
+        </div>
+        <div class="footer__academy">
+          <a href="" class="footer__academy-name">
+            HTML Academy
+          </a>
+          <a href="">
+            <svg viewBox="0 0 60 60" class="footer__academy-image">
+              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/open.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

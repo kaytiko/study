@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header header--index">
+      <div class="header__position">
+        <a href="">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
+            <img class="header__logo" src="img/logo-mobile.svg" alt="логотип">
+          </picture>
+        </a>
+        <button class="header__open">
+          Открыть меню
+        </button>
+        <div class="header__menu">
+          <a href="index.html" class="header__button header__button--opened">
+            Главная
+          </a>
+          <a href="catalog.html" class="header__button header__button--catalog">
+            Каталог продукции
+          </a>
+          <a href="form.html" class="header__button">
+            Подбор программы
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <a href="index.html" class="mobile-menu__button">
+        Главная
+      </a>
+      <a href="catalog.html" class="mobile-menu__button">
+        Каталог продукции
+      </a>
+      <a href="form.html" class="mobile-menu__button">
+        Подбор программы
+      </a>
+    </div>
+    <main>
+      <section class="cat-energy">
+        <div class="cat-energy__head">
+          <h1 class="cat-energy__title">
+            Функциональное<br>питание для котов
+          </h1>
+          <p class="cat-energy__cat">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
+        <a href="form.html" class="cat-energy__scheme">
+          <span class="cat-energy__scheme-text">
+            Подобрать программу
+          </span>
+        </a>
+      </section>
+      <section class="plus">
+        <div class="plus__item plus__item--slim">
+          <h2 class="plus__title">
+            Похудение
+          </h2>
+          <p class="plus__information plus__information--slim">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a href="" class="plus__catalog">
+            Каталог slim
+          </a>
+        </div>
+        <div class="plus__item plus__item--pro">
+          <h2 class="plus__title">
+            Набор массы
+          </h2>
+          <p class="plus__information plus__information--pro">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a href="" class="plus__catalog">
+            Каталог pro
+          </a>
+        </div>
+      </section>
+      <section class="explanation">
+        <h2 class="explanation__title">
+          Как это работает
+        </h2>
+        <ul class="explanation__tools">
+          <li class="explanation__tool explanation__tool--substances">
+            Функциональное питание содержит только полезные питательные вещества.
+          </li>
+          <li class="explanation__tool explanation__tool--cooking">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </li>
+          <li class="explanation__tool explanation__tool--eating">
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </li>
+          <li class="explanation__tool explanation__tool--time">
+            Уже через месяц наслаждайтесь изменениями к лучшему <br class="explanation-br-tablet">вашего питомца!
+          </li>
+        </ul>
+      </section>
+      <section class="example">
+        <div class="example__story">
+          <h2 class="example__title">
+            Живой пример
+          </h2>
+          <p class="example__tale">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__information">
+            <div class="example__data">
+              <div class="example__datum">
+                <p class="example__value">
+                  5 кг
+                </p>
+                <p class="example__result">
+                  снижение веса
+                </p>
+              </div>
+              <div class="example__datum">
+                <p class="example__value">
+                  60 дней
+                </p>
+                <p class="example__result">
+                  затрачено времени
+                </p>
+              </div>
+            </div>
+            <p class="example__cost">
+              Затраты на питание: 15 000 РУБ.
+            </p>
+          </div>
+        </div>
+        <div class="example__images">
+          <div class="example__cats">
+            <picture>
+              <source srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x" media="1440px">
+              <source srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x" media="768px">
+              <img class="example__cat example-cat--before" srcset="img/before-mobile@1x.png, img/before-mobile@2x.png 2x" alt="кот раньше">
+            </picture>
+            <picture>
+              <source srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x" media="1440px">
+              <source srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x" media="768px">
+              <img class="example__cat example-cat--after" srcset="img/after-mobile@1x.png, img/after-mobile@2x.png 2x" alt="кот теперь">
+            </picture>
+          </div>
+          <div class="example__form">
+            <p class="example__time">
+              Было
+            </p>
+            <div class="example__inputs">
+              <div class="example__input-mobile">
+                <div class="example__input-value-mobile"></div>
+              </div>
+              <div class="example__input-tablet-desctop">
+                <div class="example__runner"></div>
+              </div>
+            </div>
+            <p class="example__time">
+              Стало
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__contacts">
+        <p class="footer__invite">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="footer__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="362" id="gmap_canvas" src="https://maps.google.com/maps?q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.net">123movies. net</a></div><style>.mapouter{position:relative;text-align:right;height:362px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:362px;width:100%;}</style></div>
+      <div class="footer__position">
+        <div class="footer__social">
+          <a href="" class="footer__social-network footer__social-network--vk">
+            Вконтакте
+          </a>
+          <a href="" class="footer__social-network footer__social-network--in">
+            Инстаграм
+          </a>
+          <a href="" class="footer__social-network footer__social-network--fb">
+            Фейсбук
+          </a>
+        </div>
+        <div class="footer__academy">
+          <a href="" class="footer__academy-name">
+            HTML Academy
+          </a>
+          <a href="">
+            <svg viewBox="0 0 60 60" class="footer__academy-image">
+              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/open.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
