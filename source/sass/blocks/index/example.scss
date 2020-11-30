@@ -1,0 +1,111 @@
+.example {
+  padding-top: 2.6875rem;
+  background-color: $basic-light-gray;
+
+  @media (min-width: $tablet) {
+    background: $basic-white;
+    border-top: 1px solid $basic-light-gray;
+  }
+
+  @media (min-width: $desctop) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+
+    background-image: linear-gradient($basic-white 0,$basic-white 12.5rem, $basic-light-gray 12.5rem,$basic-light-gray 100%);
+
+    border-top: none;
+    overflow: hidden;
+  }
+
+  .example__wrapper {
+    margin: 0 auto;
+    padding: 0 1.25rem;
+
+    width: 100%;
+    max-width: 76.25rem;
+
+    @media (min-width: $tablet) {
+      padding: 0;
+    }
+
+    @media (min-width: $desctop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .example__content {
+    @media (min-width: $tablet) {
+      padding: 0 1.875rem;
+      margin-bottom: 3.1875rem;
+    }
+
+    @media (min-width: $desctop) {
+      margin-bottom: 4.375rem;
+      max-width: 435px;
+      padding: 0;
+    }
+  }
+
+  .example__title-block {
+    padding-bottom: 2.25rem;
+    @media (min-width: $tablet) {
+      padding-bottom: 4rem;
+    }
+
+    @media (min-width: $desctop) {
+      padding: 4.375rem 0 8.375rem;
+    }
+  }
+
+  .example__text {
+    padding-right: 5px;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: $basic-middle-gray;
+
+    @media (min-width: $tablet) {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    @media (min-width: $desctop) {
+      padding: 0;
+    }
+  }
+
+  .example__cost {
+    display: flex;
+    justify-content: center;
+
+    margin: 2.1875rem 0;
+
+    font-family: $oswald-font;
+    font-size: 0.875rem;
+
+    .example__cost-value {
+      padding-left: 0.25rem;
+
+      @media (min-width: $desctop) {
+        padding-left: 3.75rem;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      margin: 0;
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: $desctop) {
+      flex-direction: row;
+
+      margin: 3.0625rem 0 0;
+    }
+  }
+}

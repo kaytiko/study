@@ -1,0 +1,62 @@
+.toggle {
+  position: relative;
+
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 1.25rem;
+
+  cursor: pointer;
+
+  &.toggle--close {
+    .togle-icon {
+      background: transparent;
+      box-shadow: none;
+
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(135deg);
+      }
+    }
+  }
+
+  .togle-icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $basic-gray;
+
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    transition: $hover-slow;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1.5rem;
+      height: 2px;
+      background: $basic-gray;
+      box-shadow: 0 0 2px rgba(0,0,0,0.2);
+      transition: $hover-slow;
+    }
+
+    &::before {
+      top: -9px;
+    }
+    &::after {
+      top: 9px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

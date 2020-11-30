@@ -1,0 +1,98 @@
+.advantages {
+  padding: 1.875rem 0 1.375rem;
+
+  .advantages__title {
+    padding-bottom: 2.5rem;
+
+    @media (min-width: $desctop) {
+      padding-bottom: 4.375rem;
+    }
+  }
+
+  .advaneges__list {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10.9375rem;
+      row-gap: 8.625rem;
+      padding: 0;
+    }
+
+    @media (min-width: $desctop) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 5rem;
+    }
+  }
+
+  .advantages__item {
+    display: grid;
+    grid-template-columns: 3.75rem 1fr;
+    gap: 1.25rem;
+    align-items: center;
+
+    position: relative;
+
+    padding-bottom: 1.25rem;
+
+    counter-increment: section;
+
+    .advatages__item-icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 3.75rem;
+      height: 3.75rem;
+
+      background-color: $basic-green;
+
+      @media (min-width: $tablet) {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr;
+      gap: 2.125rem;
+
+      max-width: 15.625rem;
+
+      padding: 0;
+
+      &::after {
+        content: ""counter(section)"";
+        font-family: $oswald-font;
+        font-size: 17.5625rem;
+        line-height: 1;
+        color: $basic-light-gray;
+
+        position: absolute;
+        top: -2.5rem;
+        right: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  .advatages__description {
+    font-size: 0.875rem;
+
+    @media (min-width: $tablet) {
+      font-size: 1rem;
+    }
+  }
+
+  .advatages__img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 2.8125rem 0 7.625rem;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 0 0 4.375rem;
+  }
+}

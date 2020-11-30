@@ -1,0 +1,75 @@
+.header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #E6E6E6;
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 76.25rem;
+    margin: 0 auto;
+
+
+    .header__logo {
+      transition: $hover;
+
+      @media (max-width: $tablet) {
+        padding: 0 0 0 1.25rem;
+      }
+
+      @media (min-width: $desctop) {
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:active {
+          opacity: 0.6;
+        }
+      }
+    }
+
+    @media (max-width: $tablet) {
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $tablet) {
+      padding: 0 1.875rem;
+      flex-wrap: nowrap;
+    }
+
+    @media (min-width: $desctop) {
+      padding: 0;
+    }
+  }
+
+  &--nojs {
+    @media (max-width: $tablet){
+      .togle {
+        display: none;
+      }
+
+      .main-nav {
+        display: block;
+        position: static;
+        width: 100%;
+
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  &--index {
+    border-bottom: 0;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 1.5rem 0 0;
+    border-bottom: 0;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 3.375rem 0 0;
+  }
+}

@@ -1,0 +1,226 @@
+.related-products {
+  .related-products__wrapper {
+    padding-top: 1.75rem;
+
+    @media (min-width: $tablet) {
+      padding-top: 4.5rem;
+    }
+
+    @media (min-width: $desctop) {
+      margin-bottom: 5.375rem;
+    }
+  }
+
+  .related-products__title {
+    position: relative;
+    display: inline-block;
+    padding-right: 1.25rem;
+    padding-bottom: 2.125rem;
+    background-color: $basic-white;
+
+    @media (min-width: $tablet) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-bottom: 4.6875rem;
+      font-size: 2.25rem;
+    }
+
+    @media (min-width: $desctop) {
+      padding-left: 0;
+    }
+
+    &::before {
+      display: none;
+
+      @media (min-width: $tablet) {
+        display: block;
+        right: 100%;
+      }
+
+      @media (min-width: $desctop) {
+        margin-right: 2.5rem;
+      }
+    }
+
+    &::after, &::before {
+      content: '';
+      position: absolute;
+      top: 27%;
+      width: 100vw;
+      height: 3px;
+      background-color: $basic-green;
+      z-index: -1;
+
+      @media (min-width: $tablet) {
+        top: 21%;
+      }
+    }
+  }
+
+  .related-products__container {
+    @media (min-width: $desctop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .related-products__list {
+    border-top: 1px solid $special-middle-gray;
+
+    @media (min-width: $tablet) {
+      border-color: rgba($special-middle-gray,.5);
+    }
+
+    @media (min-width: $desctop) {
+      width: 100%;
+      max-width: 55.9375rem;
+    }
+  }
+
+  .related-products__item {
+    padding: 0.9375rem 0 1.0625rem;
+    border-bottom: 1px solid rgba($special-middle-gray,.5);
+
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 1.3125rem 2.5rem 1.75rem;
+      border-left: 1px solid rgba($special-middle-gray,.5);
+      border-right: 1px solid rgba($special-middle-gray,.5);
+    }
+
+    @media (min-width: $desctop) {
+      flex-wrap: nowrap;
+      align-items: center;
+      padding: 0.935rem 0;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+
+  .related-products__name {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    line-height: 1;
+    color: $basic-gray;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 1.375rem;
+      flex: 1 1 50%;
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: $desctop) {
+      flex: 0 1 20.25rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .related-products__info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.9375rem;
+    font-size: 0.875rem;
+    color: $basic-middle-gray;
+
+    @media (min-width: $tablet) {
+      flex: 0 1 14.1875rem;
+      font-size: 1rem;
+    }
+
+    @media (min-width: $desctop) {
+      flex: 0 1 20.375rem;
+      padding: 0.4375rem 2.375rem 0 0;
+    }
+  }
+
+  .related-products__button {
+    font-size: 1rem;
+
+    @media (min-width: $tablet) {
+      max-width: 100%;
+    }
+    @media (min-width: $desctop) {
+      max-width: 15.3125rem;
+    }
+  }
+
+  .related-promo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.4375rem auto 2.1875rem;
+    padding: 4.0625rem 3.4375rem 2.6875rem;
+
+    text-align: center;
+    color: $basic-white;
+    background-color: #68b738;
+    background-image: url(../img/gift-photo-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      background-image: url(../img/gift-photo-mobile@2x.jpg);
+      background-size: auto 20rem;
+    }
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 4.0625rem 7.5rem 4.0625rem 5.625rem;
+      margin: 4.3125rem auto 4.75rem;
+
+      background-image: url(../img/gift-photo-tablet@1x.jpg);
+
+      @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+        background-image: url(../img/gift-photo-tablet@2x.jpg);
+        background-size: auto 44.25rem;
+      }
+    }
+
+    @media (min-width: $desctop) {
+      flex-direction: column;
+      margin: 0;
+      padding: 4.0625rem 2.5625rem 2.75rem;
+
+      background-image: url(../img/gift-photo-desktop@1x.jpg);
+
+      @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+        background-image: url(../img/gift-photo-desctop@2x.jpg);
+        background-size: auto 44.25rem;
+      }
+    }
+  }
+
+  .related-promo__icon {
+    margin-bottom: 3.875rem;
+    width: 3.4375rem;
+    height: 3.75rem;
+    fill: $basic-white;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desctop) {
+      margin-bottom: 3.9375rem;
+    }
+  }
+
+  .related-promo__title {
+    max-width: 10.625rem;
+
+    @media (min-width: $tablet) {
+      text-align: left;
+      max-width: 10rem;
+    }
+
+    @media (min-width: $desctop) {
+      max-width: 10.25rem;
+      text-align: center;
+    }
+  }
+}

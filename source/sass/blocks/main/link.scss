@@ -1,0 +1,38 @@
+.link--angle {
+  position: relative;
+  font-family: $oswald-font;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: $basic-dark-gray;
+  transition: $hover;
+
+  &:active {
+    opacity: 0.3;
+  }
+  &:hover {
+    &::after {
+      width: 2rem;
+      background: url('../img/icon-right-arrow-verylong.svg') no-repeat left;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-left: 0.75rem;
+    margin-bottom: 2px;
+
+    width: 1.5rem;
+    height: 0.75rem;
+
+    background: url('../img/icon-right-arrow-long.svg') no-repeat left;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 1.25rem;
+
+    &::after {
+      margin-left: 1.5rem;
+    }
+  }
+}

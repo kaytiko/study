@@ -1,0 +1,109 @@
+.product {
+  padding: 0 1.25rem 1.5rem 1.25rem;
+  border-top: 1px solid #EDEDED;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+
+    padding: 0;
+
+    background-image: linear-gradient(to bottom,$basic-white,$basic-white 5.125rem,$basic-light-gray 5.125rem,$basic-light-gray);
+    border: none;
+  }
+
+  .product__layout {
+    display: flex;
+
+    @media (min-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  .product__link-block {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 8.75rem;
+    height: 9rem;
+
+    @media (min-width: $tablet) {
+      height: 13rem;
+      width: 100%;
+      align-items: flex-end;
+    }
+  }
+
+  .product__title {
+    margin-bottom: 0.875rem;
+    max-width: 4.6575rem;
+    font-size: 1rem;
+    line-height: 1.25;
+
+    .product__title-link {
+      color: $basic-dark-gray;
+    }
+
+    @media (min-width: $tablet) {
+      margin: auto;
+      max-width: 7.875rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+
+  .product__info-block {
+    flex-grow: 1;
+    padding: 1.25rem 0;
+
+    @media (min-width: $tablet) {
+      padding: 1.25rem 2.3125rem 0 2.3125rem;
+    }
+
+    @media (min-width: $desctop) {
+      padding: 1.9375rem 2.3125rem 0 2.3125rem;
+    }
+  }
+
+  .product__info {
+    @media (min-width: $tablet) {
+      padding: 1.25rem 0 2.0625rem;
+    }
+
+    .product__info-item {
+      display: flex;
+      justify-content: space-between;
+
+      @media (min-width: $tablet) {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid $special-middle-gray;
+      }
+    }
+    .product__info-name, .product__info-value {
+      font-size: 0.75rem;
+      line-height: 1.33;
+      color: $basic-middle-gray;
+
+      @media (min-width: $tablet) {
+        font-size: 1rem;
+        line-height: 1;
+      }
+    }
+  }
+
+  .product__button-block {
+    @media (min-width: $tablet) {
+      padding: 0 2.3125rem 2.5rem;
+    }
+  }
+
+  .product__button {
+    @media (min-width: $tablet) {
+      max-width: 100%;
+      font-size: 1rem;
+    }
+  }
+}

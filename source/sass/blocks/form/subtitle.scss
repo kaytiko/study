@@ -1,0 +1,34 @@
+.subtitle {
+  position: relative;
+  display: inline-block;
+  padding-right: 1.25rem;
+  background-color: $basic-white;
+
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 3px;
+    margin-top: calc(1em/2 + 3px);
+    background-color: $basic-green;
+    z-index: -1;
+  }
+
+  &:before {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    padding-right: 2.375rem;
+    padding-left: 2.375rem;
+    margin-left: -2.625rem;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+
+    &:before {
+      display: block;
+      right: 100%;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.footer {
+  background-color: $basic-light-gray;
+
+  .footer__info {
+    .footer__info-container {
+      padding-top: 2.4375rem;
+
+      @media (min-width: $tablet) {
+        padding: 3.625rem 0;
+      }
+    }
+    .footer__info-wrapper {
+      @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  .footer__logo {
+    margin-bottom: 1.9375rem;
+    text-align: center;
+    img {
+      width: 8rem;
+      height: 1.5rem;
+    }
+
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    @media (min-width: $tablet) {
+      border: none;
+    }
+
+    .footer__social-link {
+      padding: 1.25rem;
+
+      svg {
+        fill: #666666;
+      }
+
+      &:hover {
+        svg {
+          fill: $basic-green;
+        }
+      }
+
+      &:active {
+        svg {
+          fill: $basic-green;
+          opacity: 0.3;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        padding: 0 0.875rem;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      .footer__social--vk {
+        svg {
+          width: 30px;
+          height: 16px;
+        }
+      }
+      .footer__social--inst {
+        svg {
+          width: 23px;
+          height: 23px;
+        }
+      }
+      .footer__social--fb {
+        svg {
+          width: 24px;
+          height: 28px;
+        }
+      }
+    }
+  }
+
+  .footer__academy {
+    padding: 1.375rem 0;
+    .footer__academy-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:hover {
+        .footer__academy-logo {
+          fill: $basic-green;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+        .footer__academy-logo {
+          fill: $basic-green;
+        }
+      }
+    }
+    .footer__academy-name {
+      font-size: 1rem;
+      color: $basic-middle-gray;
+
+      @media (min-width: $tablet) {
+        margin-right: 1.4375rem;
+      }
+    }
+    .footer__academy-logo {
+      fill: #666666;
+    }
+
+    @media (min-width: $tablet) {
+      padding: 0;
+    }
+  }
+}

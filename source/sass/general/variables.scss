@@ -1,0 +1,39 @@
+/* Colors */
+
+$basic-white: #FFFFFF;
+$basic-dark-gray: #111111;
+$basic-gray: #222222;
+$basic-middle-gray: #444444;
+$basic-light-gray: #f2f2f2;
+$special-light-gray: #E4E4E4;
+$special-middle-gray: #CDCDCD;
+
+$border-gray: #F8F8F8;
+
+$basic-green: #68b738;
+$special-green: #5EAA2F;
+
+
+
+/* Fonts */
+
+$oswald-font: 'Oswald', sans-serif;
+$arial-font: 'Arial', sans-serif;
+
+
+/* Viewports */
+
+$mobile: 30rem;
+$tablet: 47.935rem;
+$desctop: 90rem;
+
+
+/* Transition */
+
+$hover: all 0.25s cubic-bezier(0.62,0.28,0.23,0.99);
+$hover-slow: all 0.6s cubic-bezier(0.62,0.28,0.23,0.99);
+
+
+//$big-tablet:"min-width:120rem"; // 1920px
+//$middle-tablet:"min-width:64.75rem";
+//$small-tablet:"max-width:60em";
