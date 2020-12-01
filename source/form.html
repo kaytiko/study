@@ -16,10 +16,13 @@
     <div class="header__wrapper">
       <a class="header__logo" href="#" aria-label="На главную страницу">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 767px)" srcset="img/logo-tablet.svg">
-          <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип">
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo" src="img/icon-logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy">
         </picture>
+      </a>
+      <a class="header__logo-sign-link">
+        <img class="header__logo-sign" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <div class="header__toggle toggle toggle--open">
         <div class="togle-icon"></div>
@@ -93,14 +96,14 @@
         <fieldset class="form__group form__group--contacts wrapper">
           <h2 class="form__group-title subtitle">Контактные данные <span class="form__group-title--note">(владельца кота)</span></h2>
           <div class="form-row__fiels">
-            <div class="form-row form-row--input">
+            <div class="form-row form-row--input form-row--icon">
               <label class="form-row__label" for="contact-mail">E-MAIL:*</label>
               <div class="form-row__input-wrapper">
                 <input class="form-row__input form-row__input--icon" type="email" name="contact-mail" id="contact-mail" placeholder="kuklachev@gmail.com" required="">
                 <svg class="form-row__icon form-row__icon--email" width="17" height="13"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
               </div>
             </div>
-            <div class="form-row form-row--input">
+            <div class="form-row form-row--input form-row--icon">
               <label class="form-row__label" for="weight-loss">ТЕЛЕФОН:*</label>
               <div class="form-row__input-wrapper">
                 <input class="form-row__input form-row__input--icon" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required="">

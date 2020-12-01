@@ -1,12 +1,12 @@
 .form {
-  padding-bottom: 33px;
+  padding-bottom: 2.0625rem;
 
   @media (min-width: $tablet) {
-    padding: 0 40px 72px 40px;
+    padding: 0 2.5rem 4.5rem 2.5rem;
   }
 
   @media (min-width: $tablet) {
-    padding: 0 40px 82px 40px;
+    padding: 0 2.5rem 5.125rem 2.5rem;
   }
 
   .form__wrapper {
@@ -20,10 +20,10 @@
   }
 
   .form__text-block {
-    margin-bottom: 38px;
+    margin-bottom: 2.375rem;
 
     @media (min-width: $tablet) {
-      margin-bottom: 66px;
+      margin-bottom: 4.125rem;
     }
 
     @media (min-width: $desctop) {
@@ -33,12 +33,12 @@
 
   .form__text {
     font-family: $oswald-font;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.28;
 
     @media (min-width: $tablet) {
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 1.5;
     }
   }
@@ -48,23 +48,23 @@
 
     &--personal {
       @media (min-width: $desctop) {
-        flex: 0 1 calc(50% - 40px);
+        flex: 0 1 calc(50% - 2.5rem);
       }
     }
 
     &--program {
       position: relative;
-      margin-top: 23px;
-      padding: 21px 20px;
+      margin-top: 1.4375rem;
+      padding: 1.3125rem 1.25rem;
 
       @media (min-width: $tablet) {
-        margin: 73px 1.875rem 0 1.875rem;
-        padding: 25px 28px;
+        margin: 4.5625rem 1.875rem 0 1.875rem;
+        padding: 1.5625rem 1.75rem;
       }
 
       @media (min-width: $desctop) {
         margin-top: 0;
-        flex: 0 1 calc(50% - 40px);
+        flex: 0 1 calc(50% - 2.5rem);
       }
 
       &::before {
@@ -80,41 +80,41 @@
     }
 
     &--contacts {
-      margin-top: 27px;
+      margin-top: 1.6875rem;
 
       @media (min-width: $tablet) {
-        margin-top: 66px;
+        margin-top: 4.125rem;
       }
 
       @media (min-width: $desctop) {
-        margin-top: 60px;
+        margin-top: 3.75rem;
         flex: 0 1 100%;
       }
     }
 
     &--comments {
-      margin-top: 27px;
+      margin-top: 1.6875rem;
 
       @media (min-width: $tablet) {
-        margin-top: 56px;
+        margin-top: 3.5rem;
       }
 
       @media (min-width: $desctop) {
         flex: 0 1 100%;
-        margin-top: 58px;
+        margin-top: 3.625rem;
       }
     }
 
     &--extra {
-      margin-top: 27px;
+      margin-top: 1.6875rem;
 
       @media (min-width: $tablet) {
-        margin-top: 56px;
+        margin-top: 3.5rem;
       }
 
       @media (min-width: $desctop) {
         flex: 0 1 100%;
-        margin-top: 58px;
+        margin-top: 3.625rem;
       }
     }
   }
@@ -132,7 +132,7 @@
     margin-top: 1.75rem;
 
     @media (min-width: $tablet) {
-      margin-top: 70px;
+      margin-top: 4.375rem;
     }
     @media (min-width: $desctop) {
       display: flex;
@@ -149,30 +149,19 @@
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 50px;
+      margin-top: 3.125rem;
     }
 
     .form-row--checkbox {
       @media (min-width: $tablet) {
-        flex: 0 1 calc(50% - 30px);
+        flex: 0 1 calc(50% - 1.875rem);
       }
       @media (min-width: $desctop) {
-        flex: 0 1 calc((100% - 80px*3)/4);
+        flex: 0 1 calc((100% - 5rem*3)/4);
       }
     }
   }
 
-  .form-row--input+.form-row--input {
-    margin-top: 14px;
-
-    @media (min-width: $tablet) {
-      margin-top: 20px;
-    }
-
-    @media (min-width: $desctop) {
-      margin-top: 0;
-    }
-  }
 
   .form-row {
     display: flex;
@@ -184,21 +173,21 @@
 
     &--input {
       @media (min-width: $desctop) {
-        flex: 0 1 calc(50% - 40px);
+        flex: 0 1 calc(50% - 2.5rem);
       }
     }
 
     &--radio {
       .form-row__label {
         position: relative;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 46px;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 2.875rem;
 
         @media (min-width: $tablet) {
-          padding-top: 16px;
-          padding-left: 60px;
-          padding-bottom: 16px;
+          padding-top: 1rem;
+          padding-left: 3.75rem;
+          padding-bottom: 1rem;
         }
 
         &:before {
@@ -207,16 +196,16 @@
           display: block;
           top: 6px;
           left: 0;
-          width: 30px;
-          height: 30px;
-          padding: 8px;
+          width: 1.875rem;
+          height: 1.875rem;
+          padding: 0.5rem;
           border: 1px solid $special-middle-gray;
           border-radius: 50%;
 
           @media (min-width: $tablet) {
-            width: 40px;
-            height: 40px;
-            padding: 10px
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 0.625rem;
           }
         }
 
@@ -233,18 +222,32 @@
     }
   }
 
+  .form-row--icon+.form-row--icon{
+    @media (min-width: $desctop) {
+      margin-top: 0;
+    }
+  }
+
+  .form-row--input+.form-row--input {
+    margin-top: 0.875rem;
+
+    @media (min-width: $tablet) {
+      margin-top: 1.25rem;
+    }
+  }
+
   .form-row__label {
     flex-shrink: 0;
-    margin-right: 14px;
+    margin-right: 0.875rem;
     font-family: $oswald-font;
     font-size: 1rem;
-    line-height: 18px;
+    line-height: 1.125rem;
     color: $basic-gray;
     text-transform: uppercase;
 
     @media (min-width: $tablet) {
       margin-right: 1rem;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 1;
     }
   }
@@ -255,13 +258,13 @@
   }
 
   .form-row__input {
-    padding: 9px 15px 11px;
+    padding: 0.5625rem 0.9375rem 0.6875rem;
     width: 100%;
-    height: 45px;
+    height: 2.8125rem;
 
     font-family: $oswald-font;
     font-size: 1rem;
-    line-height: 18px;
+    line-height: 1.125rem;
     color: $basic-gray;
 
     text-transform: uppercase;
@@ -270,19 +273,19 @@
     border: 1px solid rgba($special-middle-gray,.5);
 
     @media (min-width: $tablet) {
-      padding: 10px 19px 12px;
-      height: 52px;
-      font-size: 20px;
+      padding: 0.625rem 1.1875rem 0.75rem;
+      height: 3.25rem;
+      font-size: 1.25rem;
       line-height: 1;
     }
 
     &::placeholder {
       font-size: 1rem;
-      line-height: 18px;
+      line-height: 1.125rem;
       color: $basic-gray;
 
       @media (min-width: $tablet) {
-        font-size: 20px;
+        font-size: 1.25rem;
       }
     }
 
@@ -298,12 +301,12 @@
     }
 
     &--comments {
-      height: 150px;
+      height: 9.375rem;
       resize: none;
     }
 
     &--icon {
-      padding-right: 47px;
+      padding-right: 2.9375rem;
 
       &:focus~.form-row__icon {
         fill: $basic-green;
@@ -314,7 +317,7 @@
   .form-row__icon {
     position: absolute;
     top: 50%;
-    right: 32px;
+    right: 2rem;
     transform: translate(100%,-50%);
     fill: $basic-gray;
   }
@@ -340,7 +343,7 @@
 
   .form-row__checkbox-label {
     position: relative;
-    padding: 12px 46px;
+    padding: 0.75rem 2.875rem;
     user-select: none;
 
     &:before {
@@ -349,34 +352,34 @@
       display: block;
       top: 6px;
       left: 0;
-      width: 30px;
-      height: 30px;
+      width: 1.875rem;
+      height: 1.875rem;
       padding: 6px 3px 6px 4px;
       border: 1px solid $special-middle-gray;
 
       @media (min-width: $tablet) {
-        top: 16px;
-        width: 40px;
-        height: 40px;
-        padding: 11px 8px 11px 9px;
+        top: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.6875rem 0.5rem 0.6875rem 0.5625rem;
       }
     }
 
     @media (min-width: $tablet) {
-      padding-top: 26px;
-      padding-left: 60px;
-      padding-bottom: 26px;
+      padding-top: 1.625rem;
+      padding-left: 3.75rem;
+      padding-bottom: 1.625rem;
     }
   }
 
   .form-row__checkbox:checked~.form-row__checkbox-label::before {
     background: url(../img/icon-tick.svg) no-repeat center;
-    background-size: 21px auto;
+    background-size: 1.3125rem auto;
     background-clip: content-box;
   }
 
   .form-submit {
-    margin-top: 34px;
+    margin-top: 2.125rem;
     width: 100%;
 
     @media (min-width: $tablet) {
@@ -390,28 +393,28 @@
 
   .form-submit__button {
     @media (min-width: $tablet) {
-      flex: 0 1 calc(50% - 30px);
-      padding: 16px 27px;
-      font-size: 20px;
-      line-height: 20px;
-      min-width: 280px;
+      flex: 0 1 calc(50% - 1.875rem);
+      padding: 1rem 1.6875rem;
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      min-width: 17.5rem;
     }
   }
 
   .form-submit__note {
     display: block;
-    margin-top: 22px;
-    font-size: 14px;
+    margin-top: 1.375rem;
+    font-size: 0.875rem;
     line-height: 1rem;
     text-align: center;
     color: $basic-middle-gray;
 
     @media (min-width: $tablet) {
       margin-top: 0;
-      font-size: 16px;
-      line-height: 16px;
+      font-size: 1rem;
+      line-height: 1rem;
       text-align: left;
-      flex: 0 1 calc(50% - 30px);
+      flex: 0 1 calc(50% - 1.875rem);
     }
   }
 }
